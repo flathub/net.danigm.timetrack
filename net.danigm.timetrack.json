@@ -23,8 +23,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "1.0.1",
-                    "commit" : "15694523de8fa2957d59666c40c38d619e4e9fa0"
+                    "tag" : "1.0.2",
+                    "commit" : "0fa6bce920735d1c89834426536983f61919024a"
                 }
             ]
         }
