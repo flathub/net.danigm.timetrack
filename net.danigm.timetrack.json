@@ -29,8 +29,25 @@
                 {
                     "type" : "git",
                     "url" : "https://source.puri.sm/Librem5/libhandy.git",
-                    "tag" : "v0.0.9",
-                    "commit" : "56b0aa62f6251ee19a88fc208b7ca8dcf9c9633c"
+                    "tag" : "v0.0.11",
+                    "commit" : "f5909a897f70143bdd2f89f47a63c1bf848330ce"
+                }
+            ]
+        },
+        {
+            "name": "timeago",
+            "buildsystem": "simple",
+            "ensure-writable": [
+                "easy-install.pth"
+            ],
+            "build-commands": [
+                "python3 setup.py install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/02/1f/8a5a6eff81c46a36935374aca2abf27887f2bc22934f2e9ddc2aa5b3b184/timeago-1.0.10.tar.gz",
+                    "sha256": "1e26ed34cc1fdcdbb949a0d9603a78d9b794ec1ec2a6179a13466596cbdc2320"
                 }
             ]
         },
@@ -41,8 +58,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "1.2.1",
-                    "commit" : "ef22de04ae54231a3e49683061892581c2579c71"
+                    "tag" : "1.2.2",
+                    "commit" : "f273606928ed32bfb5b0994f35dce9efb491241c"
                 }
             ]
         }
