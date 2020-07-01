@@ -1,7 +1,7 @@
 {
     "app-id": "net.danigm.timetrack",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.34",
+    "runtime-version" : "3.36",
     "sdk" : "org.gnome.Sdk",
     "command" : "timetrack",
     "finish-args" : [
@@ -24,7 +24,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://source.puri.sm/Librem5/libhandy.git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
                     "tag" : "v0.0.11",
                     "commit" : "f5909a897f70143bdd2f89f47a63c1bf848330ce"
                 }
