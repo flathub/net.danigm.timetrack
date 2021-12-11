@@ -1,7 +1,7 @@
 {
     "app-id": "net.danigm.timetrack",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
+    "runtime-version" : "41",
     "sdk" : "org.gnome.Sdk",
     "command" : "timetrack",
     "finish-args" : [
@@ -13,22 +13,54 @@
     ],
     "modules" : [
         {
-            "name" : "libhandy",
-            "buildsystem" : "meson",
-            "config-opts" : [
-                "-Dintrospection=enabled",
-                "-Dglade_catalog=disabled",
-                "-Dtests=false",
-                "-Dexamples=false"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
-                    "tag" : "v0.0.11",
-                    "commit" : "f5909a897f70143bdd2f89f47a63c1bf848330ce"
-                }
-            ]
+          "name": "libadwaita",
+          "buildsystem": "meson",
+          "cleanup": [
+              "/include",
+              "/lib/pkgconfig"
+          ],
+          "config-opts": [
+              "-Dgtk_doc=false",
+              "-Dtests=false",
+              "-Dexamples=false",
+              "-Dvapi=false"
+          ],
+          "sources": [
+              {
+                  "type": "git",
+                  "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                  "tag" : "1.0.0.alpha.4",
+                  "commit" : "6b447fde8f270001a0dc29ef59d3e9bf6d32dae9"
+              }
+          ],
+          "modules" : [
+              {
+                  "name" : "libsass",
+                  "buildsystem" : "meson",
+                  "cleanup": ["*"],
+                  "sources" : [
+                      {
+                          "type" : "git",
+                          "url" : "https://github.com/lazka/libsass.git",
+                          "commit" : "c0c8ae2d7ab02f45ea461c2c3d768f248e",
+                          "branch" : "meson"
+                      }
+                  ]
+              },
+              {
+                  "name" : "sassc",
+                  "buildsystem" : "meson",
+                  "cleanup": ["*"],
+                  "sources" : [
+                      {
+                          "type" : "git",
+                          "url" : "https://github.com/lazka/sassc.git",
+                          "commit" : "82803377c33247265d779af034eceb5949e78354",
+                          "branch" : "meson"
+                      }
+                  ]
+              }
+          ]
         },
         {
             "name": "timeago",
@@ -54,8 +86,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "1.2.2",
-                    "commit" : "f273606928ed32bfb5b0994f35dce9efb491241c"
+                    "tag" : "2.0.0",
+                    "commit" : "8a7e2f5db84f19faabf486ad08726b271af9b055"
                 }
             ]
         }
