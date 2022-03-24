@@ -1,7 +1,7 @@
 {
     "app-id": "net.danigm.timetrack",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
     "command" : "timetrack",
     "finish-args" : [
@@ -13,54 +13,6 @@
         "--talk-name=org.freedesktop.Notifications"
     ],
     "modules" : [
-        {
-          "name": "libadwaita",
-          "buildsystem": "meson",
-          "cleanup": [
-              "/include",
-              "/lib/pkgconfig"
-          ],
-          "config-opts": [
-              "-Dgtk_doc=false",
-              "-Dtests=false",
-              "-Dexamples=false",
-              "-Dvapi=false"
-          ],
-          "sources": [
-              {
-                  "type": "git",
-                  "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                  "tag" : "1.0.0.alpha.4",
-                  "commit" : "6b447fde8f270001a0dc29ef59d3e9bf6d32dae9"
-              }
-          ],
-          "modules" : [
-              {
-                  "name" : "libsass",
-                  "buildsystem" : "meson",
-                  "cleanup": ["*"],
-                  "sources" : [
-                      {
-                          "type" : "git",
-                          "url" : "https://github.com/lazka/libsass.git",
-                          "commit" : "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                      }
-                  ]
-              },
-              {
-                  "name" : "sassc",
-                  "buildsystem" : "meson",
-                  "cleanup": ["*"],
-                  "sources" : [
-                      {
-                          "type" : "git",
-                          "url" : "https://github.com/lazka/sassc.git",
-                          "commit" : "82803377c33247265d779af034eceb5949e78354"
-                      }
-                  ]
-              }
-          ]
-        },
         {
             "name": "timeago",
             "buildsystem": "simple",
@@ -85,8 +37,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "2.0.3",
-                    "commit" : "cd7a698bf28375b8d7267a2a55dde4064dbe9e0c"
+                    "tag" : "2.0.4",
+                    "commit" : "36c2fed58e1bc66f9cc6bfae6e2443a827298173"
                 }
             ]
         }
