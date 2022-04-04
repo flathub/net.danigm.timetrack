@@ -9,6 +9,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-documents",
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications"
     ],
