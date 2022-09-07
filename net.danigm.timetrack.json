@@ -37,8 +37,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "2.0.4",
-                    "commit" : "36c2fed58e1bc66f9cc6bfae6e2443a827298173"
+                    "tag" : "2.0.6",
+                    "commit" : "11ef278c918b868b741f20c9853305d75f678715"
                 }
             ]
         }
