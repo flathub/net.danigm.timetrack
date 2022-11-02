@@ -1,7 +1,7 @@
 {
     "app-id": "net.danigm.timetrack",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "timetrack",
     "finish-args" : [
@@ -9,6 +9,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-documents",
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications"
     ],
@@ -37,8 +38,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "2.0.6",
-                    "commit" : "11ef278c918b868b741f20c9853305d75f678715"
+                    "branch" : "2.0.7",
+                    "commit" : "fd6b3000f22d7e62aab6811ac2ea6be962db6743"
                 }
             ]
         }
