@@ -35,11 +35,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "2.2.0"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "fix_appdata.patch"
+                    "tag" : "2.2.1"
                 }
             ]
         }
