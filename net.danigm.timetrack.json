@@ -1,7 +1,7 @@
 {
     "app-id": "net.danigm.timetrack",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
     "command" : "timetrack",
     "finish-args" : [
@@ -35,7 +35,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/danigm/timetrack.git",
-                    "tag" : "2.0.7"
+                    "tag" : "2.2.1"
                 }
             ]
         }
